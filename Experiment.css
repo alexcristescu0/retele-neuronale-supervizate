@@ -1,0 +1,87 @@
+﻿.experiment {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.container-experiment {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.vizualizari-experiment {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    flex: 1;
+}
+
+.statistici-experiment {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    background: #f8f9fa;
+    padding: 25px;
+    border-radius: 15px;
+}
+
+.metrici-container h3,
+.informatii-set-date h3 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+}
+
+.metrici-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.metrica {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.metrica-label {
+    display: block;
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+}
+
+.metrica-valoare {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.date-info p {
+    margin: 10px 0;
+    color: #555;
+}
+
+.date-info strong {
+    color: #2c3e50;
+}
+
+@media (max-width: 1024px) {
+    .container-experiment {
+        flex-direction: column;
+    }
+
+    .statistici-experiment {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .metrici-grid {
+        grid-template-columns: 1fr;
+    }
+}

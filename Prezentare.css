@@ -1,0 +1,181 @@
+﻿.pagina-prezentare {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header-prezentare {
+    text-align: center;
+    margin-bottom: 60px;
+    padding: 40px 0;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border-radius: 15px;
+}
+
+    .header-prezentare h1 {
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+        font-weight: 700;
+    }
+
+.subtitle {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+.introducere {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+    .introducere h2 {
+        color: #2c3e50;
+        margin-bottom: 20px;
+        font-size: 2rem;
+    }
+
+    .introducere p {
+        font-size: 1.1rem;
+        line-height: 1.6;
+        color: #555;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+.functionalitati {
+    margin-bottom: 60px;
+}
+
+    .functionalitati h2 {
+        text-align: center;
+        color: #2c3e50;
+        margin-bottom: 40px;
+        font-size: 2rem;
+    }
+
+.grid-functionalitati {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.card-functionalitate {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+    .card-functionalitate:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+    }
+
+    .card-functionalitate h3 {
+        color: #2c3e50;
+        margin-bottom: 15px;
+        font-size: 1.3rem;
+    }
+
+    .card-functionalitate p {
+        color: #666;
+        line-height: 1.5;
+    }
+
+.tehnologii {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+    .tehnologii h2 {
+        color: #2c3e50;
+        margin-bottom: 30px;
+        font-size: 2rem;
+    }
+
+.tehnologii-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.tech-tag {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.acces-aplicatie {
+    text-align: center;
+    margin-bottom: 60px;
+    padding: 40px;
+    background: #f8f9fa;
+    border-radius: 15px;
+}
+
+    .acces-aplicatie h2 {
+        color: #2c3e50;
+        margin-bottom: 20px;
+        font-size: 2rem;
+    }
+
+    .acces-aplicatie p {
+        color: #666;
+        margin-bottom: 30px;
+        font-size: 1.1rem;
+    }
+
+.buton-primar {
+    display: inline-block;
+    background: linear-gradient(135deg, #4CAF50 0%, #45a049 100%);
+    color: white;
+    padding: 18px 36px;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 5px 15px rgba(76, 175, 80, 0.3);
+}
+
+    .buton-primar:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 10px 25px rgba(76, 175, 80, 0.4);
+    }
+
+.footer-prezentare {
+    text-align: center;
+    padding: 30px 0;
+    color: #666;
+    border-top: 1px solid #eee;
+    margin-top: 40px;
+}
+
+    .footer-prezentare p {
+        margin: 5px 0;
+    }
+
+@media (max-width: 768px) {
+    .header-prezentare h1 {
+        font-size: 2rem;
+    }
+
+    .grid-functionalitati {
+        grid-template-columns: 1fr;
+    }
+
+    .tehnologii-list {
+        flex-direction: column;
+        align-items: center;
+    }
+}
